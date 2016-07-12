@@ -1,0 +1,13 @@
+<style>
+.table td:first-child{width:30%}
+.table td:nth-child(2){width:40%}
+</style>
+<h2>您确定要删除此角色(<?php echo $data["rolename"]; ?>)？</h2>
+<br><br>
+<h4>删除角色将同时删除角色的所有授权，请慎重操作！</h4>
+<br><br>
+<form method="POST" action="">
+	<input type="hidden" name="verfiy" value="1" >
+	<input class="submit radius2"  type="submit" value="确定删除">
+	<a class="stdbtn" href="<?php echo site_url('manage/role/index'); ?>">取消修改</a>
+</form>
